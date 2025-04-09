@@ -25,7 +25,7 @@ X_test_std = sc.transform(X_test)
 
 # configuración del árbol de decisión
 arbol = DecisionTreeClassifier(criterion='entropy',
-                                max_depth=8, random_state=1)
+                                max_depth=1000, random_state=42)
 
 # ajustar el modelo
 arbol.fit(X_train_std, Y_train)

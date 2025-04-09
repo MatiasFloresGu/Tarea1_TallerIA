@@ -12,7 +12,7 @@ y = digits.target
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 # Crear y entrenar el modelo de regresión logística
-clf = LogisticRegression(max_iter=10000)  # Aumentar max_iter para asegurar convergencia
+clf = LogisticRegression(max_iter=1000)  # Aumentar max_iter para asegurar convergencia
 
 #Entrenar el modelo
 clf.fit(X_train, y_train)
